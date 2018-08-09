@@ -1,0 +1,190 @@
+section, article, figure, nav, header, main {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+img {display: inline-block;}
+
+body {
+  font-family: Tahoma, Sans-serif;
+  line-height: 1.4; }
+
+p, figcaption {
+  font-size: 14.5px;
+  font-family: "Times New Roman", Serif; }
+
+p {
+  color: #8d8d8d;
+  margin-top: 0.5em;
+  margin-bottom: 0.9em; }
+
+.page {
+    font-family: Tahoma, Sans-serif;
+		line-height: 1.4;
+}
+
+.page__main {
+  display: block;
+  width: 850px;
+  margin: 0 auto;
+  padding-top: 0.7em;
+  padding-bottom: 0.2em; }
+
+.page__header::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.nav {
+	display: inline-block;
+	float: right;
+}
+
+@media screen and (max-width: 849px) {
+  .page__main {
+    width: 90vw; }
+}
+
+.logo {
+   float: left;
+	 /* background-image: url(logo.png); */
+}
+
+.menu {
+    overflow-y: auto;
+}
+
+.menu {
+    float: right;
+		
+}
+
+.menu {
+  display: block; }
+
+.menu__item {
+    display: inline-block;
+    font-size: 1.2em;
+    padding-left: 1.2em; }
+
+.menu__item a {
+      text-decoration: none;
+      font-weight: 800;
+      color: #000;
+      font-size: 16px; }
+
+.menu__item a:active {
+      color: #333; }
+
+.menu__item {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+}
+
+.advert {
+    
+}
+
+.advert {
+  padding: 15px 25px 12px 25px;
+  margin-bottom: 1.3em;
+  background-color: #f0f0f0;
+  vertical-align: top; }
+
+.advert ::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.advert h2 {
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+.advert__image { width: 49%; display: inline-block;}
+
+.advert__propos { width: 49%; float: right;}
+
+.advert__but {
+  display: inline-block;
+  padding: 5px 23px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#da4137), to(#b4362d));
+  background: linear-gradient(to bottom, #da4137, #b4362d); }
+
+/* Adaptive styles */
+
+@media screen and (max-width: 849px) {
+	.advert__image, .advert__propos {
+    float: none;
+    width: 100%;
+		display: inline-block;
+	}
+	.advert__image  {text-align: center;}
+	.advert ::after {
+    content: '';
+    display: block;
+    clear: both; 
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+.advert__image img {
+    width: 100%; } 
+}
+
+.article h2 {
+  font-size: 18px;
+  margin-bottom: 0; }
+
+.icons-greed {
+  padding-bottom: 1em;   
+
+}
+
+.icons-greed::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.icons-greed__icon {
+  width: 25%;
+  margin: 0; 
+	display: inline-block;
+	float: left;}
+
+.icons-greed__icon img {float: left;}
+
+.icons-greed__caption {
+  width: 10em;
+  font-style: italic;
+  padding-left: 1em;
+  padding-top: 0.1em; 
+	float: left;}
+
+// Responsive styles
+	
+@media screen and (max-width: 849px) .icons-greed__icon img { float: none; }
+
+// Responsive styles
+	
+@media screen and (max-width: 849px) .icons-greed__icon {
+    text-align: center;
+    display: inline-block;
+    width: 24%; }
+
+// Responsive styles
+	
+@media screen and (max-width: 849px) .icons-greed__caption {
+    width: 100%;
+    padding-left: 0; }
+
+@media screen and (max-width: 480px) {
+.icons-greed__icon {
+    width: 50%;
+    margin-bottom: 1.5em; }
+}
