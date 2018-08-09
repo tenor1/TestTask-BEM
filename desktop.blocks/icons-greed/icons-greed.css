@@ -1,0 +1,45 @@
+.icons-greed {
+  padding-bottom: 1em;   
+
+}
+
+.icons-greed::after {
+  content: '';
+  clear: both;
+  display: block; } 
+
+.icons-greed__icon {
+  width: 25%;
+  margin: 0; 
+	display: inline-block;
+	float: left;}
+	
+.icons-greed__icon img {float: left;}
+
+.icons-greed__caption {
+  width: 10em;
+  font-style: italic;
+  padding-left: 1em;
+  padding-top: 0.1em; 
+	float: left;}
+	
+// Responsive styles
+	
+@media screen and (max-width: 849px) {
+
+.icons-greed__icon img { float: none; }
+.icons-greed__icon {
+    text-align: center;
+    display: inline-block;
+    width: 24%; }
+		
+.icons-greed__caption {
+    width: 100%;
+    padding-left: 0; } 
+}
+
+@media screen and (max-width: 480px) {
+.icons-greed__icon {
+    width: 50%;
+    margin-bottom: 1.5em; }
+}

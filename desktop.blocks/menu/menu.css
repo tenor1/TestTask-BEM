@@ -1,0 +1,17 @@
+.menu {
+    float: right;
+		
+}
+.menu {
+  display: block; }
+  .menu__item {
+    display: inline-block;
+    font-size: 1.2em;
+    padding-left: 1.2em; }
+    .menu__item a {
+      text-decoration: none;
+      font-weight: 800;
+      color: #000;
+      font-size: 16px; }
+    .menu__item a:active {
+      color: #333; }
